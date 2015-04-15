@@ -1,1 +1,0 @@
-python /var/convertor/run.py
