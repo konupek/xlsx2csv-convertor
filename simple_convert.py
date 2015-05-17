@@ -34,7 +34,7 @@ class Convertor:
     def convert(self, src, dest, name_prefix):
         files_extension = glob.glob(src + '*.*')
         files_all = glob.glob(src + '*')
-        files = list(set(files_all) - set(files_extension))
+        files = sorted(list(set(files_all) - set(files_extension)))
         for xls_file in files:
             self.sheet_names = []
             self.csv_from_excel(xls_file, dest + name_prefix + '.')

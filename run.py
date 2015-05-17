@@ -11,7 +11,7 @@ parser.add_option("-d", "--data", dest="data",
 
 
 
-in_path = options.data + 'in/files2/';
+in_path = options.data + 'in/files/';
 out_path = options.data + 'out/tables/';
 stream = open(options.data + "config.yml", 'r')
 config = yaml.load(stream)
